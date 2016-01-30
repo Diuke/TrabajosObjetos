@@ -1,2 +1,2 @@
 # TrabajosObjetos
-Every program made in class will come here
+Every program made in class will be keeped in this repository

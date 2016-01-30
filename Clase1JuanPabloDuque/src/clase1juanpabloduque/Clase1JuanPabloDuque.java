@@ -1,6 +1,5 @@
 package clase1juanpabloduque;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Clase1JuanPabloDuque {
@@ -8,12 +7,11 @@ public class Clase1JuanPabloDuque {
     public static void main(String[] args) {
         int dia, mes, year, error = 0;
         boolean valid = true;
+        InOut in = new InOut();
         Scanner scan = new Scanner(System.in);
         try {
-            System.out.println("Ingrese el dia: ");
-            dia = scan.nextInt();
-            System.out.println("Ingrese el mes: ");
-            mes = scan.nextInt();
+            dia = in.InputInt("Ingrese el dia: ");
+            mes = in.InputInt("Ingrese el mes: ");
             if (mes < 1 || mes > 12) {
                 valid = false;
                 error = 2;
@@ -36,8 +34,7 @@ public class Clase1JuanPabloDuque {
                 }
 
             }
-            System.out.println("Ingrese el año: ");
-            year = scan.nextInt();
+            year = in.InputInt("Ingrese el año: ");
             if (year < 0) {
                 valid = false;
                 error = 3;
@@ -64,7 +61,6 @@ public class Clase1JuanPabloDuque {
             }
         } catch (Exception e) {
             System.out.println("Invalid input");
-            e.printStackTrace();
         }
 
     }
