@@ -12,7 +12,7 @@ import java.util.HashMap;
  *
  * @author juan-
  */
-public class Cliente {
+public class Cliente implements java.io.Serializable{
     private int cod;
     private int age;
     private String name;

@@ -9,9 +9,9 @@ package bibliotecahgw;
  *
  * @author juan-
  */
-public class Material {
+public class Material implements java.io.Serializable{ 
     boolean disponible;
-    int codigo;
+    int codigo; 
     String ubicacion;
 
     public Material(boolean disponible, int codigo, String ubicacion) {

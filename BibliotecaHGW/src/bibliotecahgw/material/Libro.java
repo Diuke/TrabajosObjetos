@@ -12,7 +12,7 @@ import bibliotecahgw.Material;
  *
  * @author juan-
  */
-public class Libro extends Material{
+public class Libro extends Material implements java.io.Serializable{
     String titulo;
     String genero;
     String autor;
@@ -22,8 +22,8 @@ public class Libro extends Material{
     public Libro(boolean disponible, int codigo, String ubicacion, String titulo) {
         super(disponible, codigo, ubicacion);
         this.titulo = titulo;
-    }
-    
+    }    
+ 
     public void setClientePrestado(Cliente c){
         this.clientePrestado = c;
     }

@@ -11,7 +11,7 @@ import bibliotecahgw.material.Libro;
  *
  * @author juan-
  */
-public class Prestamo {
+public class Prestamo implements java.io.Serializable{
     int codPrestamo;
     int numeroRenovaciones;
     Libro libro;
@@ -22,7 +22,7 @@ public class Prestamo {
 
     public Prestamo(int codPrestamo, Libro libro, Cliente cliente, String fechaPrestamo) {
         this.codPrestamo = codPrestamo;
-        this.libro = libro;
+        this.libro = libro; 
         this.cliente = cliente;
         this.fechaPrestamo = fechaPrestamo;
     }
